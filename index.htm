@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CALCULATOR</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- Takings 
+
+    1) Dont use Inline CSS
+    2) Use rules for naming class,id and variaable
+    3) Use proper naming for functions (Understandable)
+    4) Use semantic tags for secetioning 
+    5) Use Maximum JS to handle HTML,css
+
+-->
+
+<body>
+    <div id="main-div">
+        <div id="inner-div">
+            <div id="heading">
+                <h2>CALCULATOR</h2>
+            </div>
+            <div id="dispalay-box" contenteditable="true"></div>
+            <div class="Buttons">
+                <table>
+                    <tr>
+                        <td><button class="btn" value="=" onclick="clearDisplay()">AC</button></td>
+                        <td><button class="btn" value="%" onclick="changeValue()">+/-</button></td>
+                        <td><button class="btn" value="%" onclick="operatorPerc(this)">%</button></td>
+                        <td><button class=" btn " value="/" onclick="operator(this)">/</button></td>
+                        <td><button class="sp-btn" value="Math.sin(" onclick="onclickFunction(this)">sin</button></td>
+                        <td><button class="sp-btn" value="Math.cos(" onclick="onclickFunction(this)">cos</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button class="btn" value="7" onclick="onclickFunction(this)">7</button></td>
+                        <td><button class="btn" value="8" onclick="onclickFunction(this)">8</button></td>
+                        <td><button class="btn" value="9" onclick="onclickFunction(this)">9</button></td>
+                        <td><button class=" btn " value="*" onclick="operator(this)">*</button></td>
+                        <td><button class="sp-btn" value="Math.tan(" onclick="onclickFunction(this)">tan</button></td>
+                        <td><button class="sp-btn" value="Math.pow(2," onclick="onclickFunction(this)">^2</button></td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td><button class="btn" value="4" onclick="onclickFunction(this)">4</button></td>
+                        <td><button class="btn" value="5" onclick="onclickFunction(this)">5</button></td>
+                        <td><button class="btn" value="6" onclick="onclickFunction(this)">6</button></td>
+                        <td><button class=" btn " value="-" onclick="operator(this)">-</button></td>
+                        <td><button class="sp-btn" value="Math.pow(" onclick="onclickFunction(this)">^y</button></td>
+                        <td><button class="sp-btn" value="1/" onclick="onclickFunction(this)">1/x</button></td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td><button class="btn" value="1" onclick="onclickFunction(this)"
+                                onkeypress="onclickFunction(this)">1</button></td>
+                        <td><button class="btn" value="2" onclick="onclickFunction(this)">2</button></td>
+                        <td><button class="btn" value="3" onclick="onclickFunction(this)">3</button></td>
+                        <td><button class=" btn " value="+" onclick="operator(this)">+</button></td>
+                        <td><button class="sp-btn" value="3.141592653589793" onclick="onclickFunction(this)">pi</button>
+                        </td>
+                        <td><button class="sp-btn" value="!" onclick="onclickFunction(this)">n!</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button class="btn" value="0" onclick="onclickFunction(this)">0</button></td>
+                        <td><button class="btn" value="." onclick="onclickFunction(this)">.</button></td>
+                        <td><button class="btn" value="," onclick="onclickFunction(this)">,</button></td>
+                        <td><button class="btn" onclick="backspace(this)">back</button></td>
+                        <td><button class="sp-btn" value="Math.sqrt(" onclick="onclickFunction(this)">sqrt</button></td>
+                        <td><button class="sp-btn" value="Math.log(" onclick="onclickFunction(this)">log</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="sp-btn" value="(" onclick="onclickFunction(this)">(</button></td>
+                        <td><button class="sp-btn" value=")" onclick="onclickFunction(this)">)</button></td>
+                        <td><button class="sp-btn" value="Math.log10(" onclick="onclickFunction(this)">ln10</button>
+                        </td>
+                        <td><button class="sp-btn" value="Math.log2(" onclick="onclickFunction(this)">ln2</button></td>
+                        <td><button class="sp-btn" value="Math.pow(3," onclick="onclickFunction(this)">^3</button></td>
+                        <td><button class="btn" value="=" onclick="result()"
+                                style="background-color: #161515; color: white;">=</button></td>
+                    </tr>
+                </table>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Javascript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
